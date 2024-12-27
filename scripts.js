@@ -5,7 +5,6 @@ document.addEventListener('DOMContentLoaded', () => {
         { title: 'Greek Words You Already (Kinda) Know', file: 'Greek Words You Already (Kinda) Know.html' },
         { title: 'Greek Grammar Tables - BIG', file: 'Greek Grammar Tables - BIG.html' },
         { title: 'Bible Book Lengths', file: 'Bible Book Lengths.html' },
-
     ];
 
     const pageSelect = document.getElementById('page-select');
@@ -23,12 +22,17 @@ document.addEventListener('DOMContentLoaded', () => {
     // Load the page content based on the selected option
     const loadPageContent = (file) => {
         fetch(`pages/${file}`)
-            .then(response => response.text())
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error('File not found');
+                }
+                return response.text();
+            })
             .then(content => {
                 contentContainer.innerHTML = content;
             })
-            .catch(error => {
-                contentContainer.innerHTML = '<p>Error loading content.</p>';
+            .catch(() => {
+                contentContainer.innerHTML = '<p>Error loading content. File not found.</p>';
             });
     };
 
