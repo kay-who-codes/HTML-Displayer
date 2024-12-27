@@ -2,6 +2,7 @@
 html, body, header, main, footer {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 /* Ensure the body takes up the full height of the viewport */
@@ -15,19 +16,30 @@ body {
   transition: background-color 0.3s, color 0.3s;
 }
 
+/* Header styling */
 header {
   background-color: var(--header-bg-color);
   color: var(--header-text-color);
-  padding: 0px;
-  text-align: center;
+  padding: 0;
 }
 
 .Header-Text {
-  font-size: 1.2rem;
-  padding: 5px 0px 5px 20px;
+  font-size: 1.4rem;
+  padding: 5px 20px;
   text-align: left;
 }
 
+/* Link styling */
+a {
+  color: var(--link-color);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Page selector styling */
 .page-selector {
   padding: 10px;
   text-align: center;
@@ -38,12 +50,56 @@ header {
   font-size: 16px;
 }
 
-/* Flex-grow allows the main element to expand and take available space */
+/* Main content area */
 main {
-  padding: 20px;
+  padding: 20px 40px 40px 40px;
   flex-grow: 1;
+  text-align: left;
 }
 
+.h3 {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+  margin-top: 50px;
+}
+
+/* Centralising and handling table overflow */
+.table-wrapper {
+  display: flex;
+  justify-content: center; /* Centre the table horizontally */
+  align-items: center; /* Centre the table vertically */
+  flex-grow: 1;
+  overflow-x: auto; /* Enables horizontal scrolling if content overflows */
+}
+
+table {
+  border-collapse: collapse;
+  margin: 0 auto; /* Ensure centring within the container */
+  font-size: 18px;
+  max-width: 100%;
+  table-layout: auto; /* Allow the table to adjust based on its content */
+}
+
+table th, table td {
+  padding: 13px;
+  border: 1px solid #ddd;
+  text-align: center;
+}
+
+table th {
+  background-color: var(--table-header-bg-color);
+  color: var(--table-header-text-color);
+}
+
+table tr:nth-child(even) {
+  background-color: var(--table-row-even-bg-color);
+}
+
+table tr:nth-child(odd) {
+  background-color: var(--table-row-odd-bg-color);
+}
+
+/* Theme toggle button */
 .toggle-theme {
   padding: 10px;
   text-align: center;
@@ -101,48 +157,21 @@ input:checked + .slider:before {
   color: var(--text-color);
 }
 
+/* Footer styling */
 footer {
-  background-color: var(--header-bg-color);
-  color: var(--header-text-color);
-  padding: 10px;
+  background-color: #00000000;
+  color: grey;
+  font-size: 0.7rem;
+  padding: 5px;
   text-align: center;
 }
 
-table {
-  width: 100%;
-  border-collapse: collapse;
-  margin: 20px 0;
-  font-size: 18px;
-  text-align: left;
-}
-
-table th, table td {
-  padding: 12px;
-  border: 1px solid #ddd;
-}
-
-table th {
-  background-color: var(--table-header-bg-color);
-  color: var(--table-header-text-color);
-}
-
-table tr:nth-child(even) {
-  background-color: var(--table-row-even-bg-color);
-}
-
-table tr:nth-child(odd) {
-  background-color: var(--table-row-odd-bg-color);
-}
-
-a {
-  color: var(--link-color);
+.footer-link {
+  color: #f09d05;
   text-decoration: none;
 }
 
-a:hover {
-  text-decoration: underline;
-}
-
+/* CSS Variables */
 :root {
   --header-bg-color: #f8f9fa;
   --header-text-color: #333;
