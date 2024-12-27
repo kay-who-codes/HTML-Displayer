@@ -4,6 +4,7 @@ document.addEventListener('DOMContentLoaded', () => {
         { title: 'Greek Grammar Tables', file: 'Greek Grammar Tables.html' },
         { title: 'Greek Words You Already (Kinda) Know', file: 'Greek Words You Already (Kinda) Know.html' },
         { title: 'Greek Grammar Tables - BIG', file: 'Greek Grammar Tables - BIG.html' },
+        { title: 'Bible Book Lengths', file: 'Bible Book Lengths.html' },
 
     ];
 
