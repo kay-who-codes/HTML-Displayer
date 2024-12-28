@@ -1,8 +1,9 @@
 document.addEventListener('DOMContentLoaded', () => {
     const pages = [
         { title: 'Home', file: 'home.html' },
-        { title: 'Greek Grammar Tables', file: 'Greek Grammar Tables.html' },
+        { title: 'Greek Word Case Explainer', file: 'Greek Word Case Explainer.html' },
         { title: 'Greek Words You Already (Kinda) Know', file: 'Greek Words You Already (Kinda) Know.html' },
+        { title: 'Greek Grammar Tables', file: 'Greek Grammar Tables.html' },
         { title: 'Greek Grammar Tables - BIG', file: 'Greek Grammar Tables - BIG.html' },
         { title: 'Bible Book Lengths', file: 'Bible Book Lengths.html' },
     ];
