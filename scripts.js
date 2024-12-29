@@ -45,6 +45,15 @@ document.addEventListener('DOMContentLoaded', () => {
     // Load the default page
     loadPageContent('home.html');
 
+    // AUTO DARK MODE
+    document.addEventListener('DOMContentLoaded', () => {
+        // Check local storage for theme preference
+        const theme = localStorage.getItem('theme') || 'dark';
+        if (theme === 'dark') {
+            document.body.classList.add('dark-mode');
+        }
+    });
+    
     // Theme toggle functionality
     const toggleTheme = () => {
         document.documentElement.classList.toggle('dark-mode');
