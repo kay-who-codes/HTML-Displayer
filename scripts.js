@@ -1,6 +1,8 @@
 document.addEventListener('DOMContentLoaded', () => {
     const pages = [
         { title: 'Home', file: 'home.html' },
+        { title: 'Greek Alphabet', file: 'Greek Alphabet.html' },
+        { title: 'Greek Orthography', file: 'Greek Orthography.html' },
         { title: 'Greek Word Case Explainer', file: 'Greek Word Case Explainer.html' },
         { title: 'Greek Words You Already (Kinda) Know', file: 'Greek Words You Already (Kinda) Know.html' },
         { title: 'Greek Grammar Tables', file: 'Greek Grammar Tables.html' },
@@ -45,15 +47,6 @@ document.addEventListener('DOMContentLoaded', () => {
     // Load the default page
     loadPageContent('home.html');
 
-    // AUTO DARK MODE
-    document.addEventListener('DOMContentLoaded', () => {
-        // Check local storage for theme preference
-        const theme = localStorage.getItem('theme') || 'dark';
-        if (theme === 'dark') {
-            document.body.classList.add('dark-mode');
-        }
-    });
-    
     // Theme toggle functionality
     const toggleTheme = () => {
         document.documentElement.classList.toggle('dark-mode');
