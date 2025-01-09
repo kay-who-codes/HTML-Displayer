@@ -8,6 +8,8 @@ document.addEventListener('DOMContentLoaded', () => {
         { title: 'Greek Grammar Tables', file: 'Greek Grammar Tables.html' },
         { title: 'Greek Grammar Tables - BIG', file: 'Greek Grammar Tables - BIG.html' },
         { title: 'Bible Book Lengths', file: 'Bible Book Lengths.html' },
+        { title: 'Logical Fallacies', file: 'Logical Fallacies.html' },
+
     ];
 
     const pageSelect = document.getElementById('page-select');
