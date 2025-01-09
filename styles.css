@@ -5,6 +5,31 @@ html, body, header, main, footer {
   box-sizing: border-box;
 }
 
+/* CSS Variables */
+:root {
+  --header-bg-color: #f8f9fa;
+  --header-text-color: #333;
+  --table-header-bg-color: #f1f1f1;
+  --table-header-text-color: #333;
+  --table-row-even-bg-color: #fafafa;
+  --table-row-odd-bg-color: #f5f5f5;
+  --background-color: #ffffff;
+  --text-color: #000000;
+  --link-color: #07158d; /* Dark Blue for light mode */
+}
+
+:root.dark-mode {
+  --header-bg-color: #13131341;
+  --header-text-color: #f8f9fa;
+  --table-header-bg-color: #111111;
+  --table-header-text-color: #f8f9fa;
+  --table-row-even-bg-color: #121212;
+  --table-row-odd-bg-color: #121212;
+  --background-color: #131313;
+  --text-color: #e0e0e0;
+  --link-color: #5bcbff;
+}
+
 /* Ensure the body takes up the full height of the viewport */
 body {
   font-family: Arial, sans-serif;
@@ -37,6 +62,11 @@ a {
 
 a:hover {
   text-decoration: underline;
+}
+
+li {
+  padding-top: 0.4rem;
+  padding-bottom: 0.4rem;
 }
 
 /* Page selector styling */
@@ -169,29 +199,4 @@ footer {
 .footer-link {
   color: #f09d05;
   text-decoration: none;
-}
-
-/* CSS Variables */
-:root {
-  --header-bg-color: #f8f9fa;
-  --header-text-color: #333;
-  --table-header-bg-color: #f1f1f1;
-  --table-header-text-color: #333;
-  --table-row-even-bg-color: #fafafa;
-  --table-row-odd-bg-color: #f5f5f5;
-  --background-color: #ffffff;
-  --text-color: #000000;
-  --link-color: #07158d; /* Dark Blue for light mode */
-}
-
-:root.dark-mode {
-  --header-bg-color: #13131341;
-  --header-text-color: #f8f9fa;
-  --table-header-bg-color: #111111;
-  --table-header-text-color: #f8f9fa;
-  --table-row-even-bg-color: #121212;
-  --table-row-odd-bg-color: #121212;
-  --background-color: #131313;
-  --text-color: #e0e0e0;
-  --link-color: #bceaff; /* White for dark mode */
 }
