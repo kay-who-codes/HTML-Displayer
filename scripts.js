@@ -3,6 +3,7 @@ document.addEventListener('DOMContentLoaded', () => {
         { title: 'Home', file: 'home.html' },
         { title: 'Greek Alphabet', file: 'Greek Alphabet.html' },
         { title: 'Greek Orthography', file: 'Greek Orthography.html' },
+        { title: 'Greek Noun Declensions', file: 'Greek Noun Declensions.html' },
         { title: 'Greek Word Case Explainer', file: 'Greek Word Case Explainer.html' },
         { title: 'Greek Words You Already (Kinda) Know', file: 'Greek Words You Already (Kinda) Know.html' },
         { title: 'Greek Grammar Tables', file: 'Greek Grammar Tables.html' },
