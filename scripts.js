@@ -2,6 +2,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const pages = [
         { title: 'Home', file: 'home.html' },
         { title: 'Greek Alphabet', file: 'Greek Alphabet.html' },
+        { title: 'Gematria Values', file: 'Gematria Values.html' },
         { title: 'Greek Orthography', file: 'Greek Orthography.html' },
         { title: 'Greek Noun Declensions', file: 'Greek Noun Declensions.html' },
         { title: 'Greek Word Case Explainer', file: 'Greek Word Case Explainer.html' },
