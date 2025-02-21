@@ -39,19 +39,7 @@ body {
   background-color: var(--background-color);
   color: var(--text-color);
   transition: background-color 0.3s, color 0.3s;
-}
-
-/* Header styling */
-header {
-  background-color: var(--header-bg-color);
-  color: var(--header-text-color);
-  padding: 0;
-}
-
-.Header-Text {
-  font-size: 1.4rem;
-  padding: 5px 20px;
-  text-align: left;
+  margin-top: 50px;
 }
 
 /* Link styling */
